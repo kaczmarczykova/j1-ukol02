@@ -9,8 +9,41 @@ public class HlavniProgram {
         new HlavniProgram().start();
     }
 
+    public void trojuhelnik(double strana){
+        for (int i = 0; i < 3; i++) {
+            zofka.move(strana);
+            zofka.turnLeft(60);
+        }
+    }
+
+    public void ctverec(double strana){
+        for (int i = 0; i < 4; i++) {
+            zofka.move(strana);
+            zofka.turnLeft(90);
+        }
+    }
+
+    public void obdelnik(double stranaA, double stranaB) {
+        for (int i = 0; i < 2; i++) {
+            zofka.move(stranaA);
+            zofka.turnLeft(90);
+            zofka.move(stranaB);
+            zofka.turnLeft(90);
+        }
+    }
+
+    public void kolecko(double delka, double uhel) {
+        for (int i = 0; i < (360/uhel); i++) {
+            zofka.move(delka);
+            zofka.turnLeft(uhel);
+        }
+    }
+
+
     public void start() {
         //TODO Tady bude kód pro kreslení želví grafiky.
+
+
     }
 
 }
