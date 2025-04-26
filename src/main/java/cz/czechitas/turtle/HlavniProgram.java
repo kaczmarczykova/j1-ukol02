@@ -44,6 +44,7 @@ public class HlavniProgram {
         //TODO Tady bude kód pro kreslení želví grafiky.
 
 
+
     }
 
 }
