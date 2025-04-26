@@ -12,7 +12,7 @@ public class HlavniProgram {
     public void trojuhelnik(double strana){
         for (int i = 0; i < 3; i++) {
             zofka.move(strana);
-            zofka.turnLeft(60);
+            zofka.turnLeft(120);
         }
     }
 
